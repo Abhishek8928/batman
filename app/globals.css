@@ -3,13 +3,82 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #161618;
   --foreground: #171717;
+  --grays-mauve: #7e7d87;
+  --grays-mauve-1: hsl(240 4% 9%);
+  --grays-mauve-10: hsl(247 4% 51%);
+  --grays-mauve-11: hsl(249 4% 64%);
+  --grays-mauve-12: hsl(240 6% 93%);
+  --grays-mauve-2: hsl(240 5% 12%);
+  --grays-mauve-3: hsl(240 4% 14%);
+  --grays-mauve-4: hsl(240 5% 16%);
+  --grays-mauve-5: hsl(240 4% 19%);
+  --grays-mauve-6: hsl(240 5% 22%);
+  --grays-mauve-7: hsl(240 5% 25%);
+  --grays-mauve-8: hsl(248 5% 33%);
+  --grays-mauve-9: hsl(247 4% 45%);
+  --grays-mauve-alpha-1: hsl(0 0 0% / 0);
+  --grays-mauve-alpha-2: hsl(240 78% 91% / 0.03);
+  --grays-mauve-alpha-3: color(display-p3 0.9216 0.9216 0.9961 / 0.06);
+  --grays-mauve-alpha-4: color(display-p3 0.898 0.898 0.9961 / 0.09);
+
+  --teal-alpha-11: hsl(174 100% 52% / 0.75);
+  --teal-alpha-4: hsl( 0 0.9922 0.9098 / 0.1);
+  --blue-9: hsl(display-p3 0 0.3527 0.92);
+
+  --blue-11: color(display-p3 0.3216 0.6627 1);
+        --blue-12: color(display-p3 0.9176 0.9647 1);
+        --blue-9:hsl(217 100% 46%);
+        --teal-alpha-4: color(display-p3 0 0.9922 0.9098 / 0.10);
+
+        --blue-alpha-11: color(display-p3 0.3255 0.6745 1 / 0.98);
+        --blue-alpha-3: color(display-p3 0.0863 0.4667 0.9961 / 0.14);
+        --blue-alpha-4: color(display-p3 0.0784 0.4627 0.9961 / 0.20);
+        --orange-alpha-11: color(display-p3 1 0.549 0.2471 / 0.98);
+        --orange-alpha-2: color(display-p3 0.9922 0.2157 0 / 0.05);
+        --orange-alpha-3: color(display-p3 0.9922 0.3294 0 / 0.12);
+        --red-alpha-3: color(display-p3 0.9961 0.2275 0.2392 / 0.13);
+        --red-alpha-4: color(display-p3 0.9961 0.2235 0.251 / 0.18);
+        --red-alpha-9: color(display-p3 1 0.3098 0.3333 / 0.88);
+        --yellow-9 :#ffb703;
+        --red-9:#d62828;
+        --yellow-5:#2dc653;
+        --blue-9:#003566;
+        --yellow-2:#e09f3e;
+        --crimson-9:#d90429;
+        --brown-9:#bc6c25;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.btn-shadow {
+  box-shadow: 0 0 0 1px #161618, 0 1px 2px #161618, 0 0.75px 0.5px #e8e8ff1f;
+}
+.separator {
+  height: 2px;
+  border-bottom-width: 1px;
+  border-color: var(--grays-mauve-3);
+  background-color: var(--grays-mauve-1);
+}
+
+.active-nav-link {
+  color: var(--grays-mauve-12);
+  background-color: var(--grays-mauve-3);
+  box-shadow: 0 0.5px 2px #0a0a0b99, 0 1.5px 0.5px -1px #e8e8fe30 inset;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.6, 0.6, 0, 1);
+  transition-duration: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #161618;
     --foreground: #ededed;
   }
 }
